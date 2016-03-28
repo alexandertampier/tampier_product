@@ -4,8 +4,14 @@ import java.util.*;
 
 public class Company {
 	private List<Product> products;
+	String name;
 
 	public Company() {
-		this.product = new ArrayList<Product>();
-	}		
+		this.products = new ArrayList<Product>();
+		this.name = "IBM";
+	}
+
+	public List<Product> getInterneListe() {
+		return Collections.unmodifiableList(products);
+	}
 }
